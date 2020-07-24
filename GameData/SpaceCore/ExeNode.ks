@@ -18,7 +18,7 @@ when running = true then {
 
 rcs on.
 sas off.
-set throttle to 0.
+lock throttle to 0.
 
 
 //staging

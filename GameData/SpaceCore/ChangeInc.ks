@@ -102,14 +102,14 @@ if WhichNode = better {
 	    warpto(BurnMoment-BurnTime/2-WarpStopTime).
 
 	    wait until vang(ship:facing:forevector,steering) <  5 and time:seconds > BurnMoment-BurnTime/2.
-	    	set throttle to 1.
+	    	lock throttle to 1.
 		    print "Burn started             " at (0,0).
 
 		wait until abs(TInc-Inc)<=IncAccuracy*10.
-	    	set throttle to 0.1.
+	    	lock throttle to 0.1.
 
 	    wait until abs(TInc-Inc)<=IncAccuracy.
-	    	set throttle to 0.
+	    	lock throttle to 0.
 		    print "Burn completed" at (0,0).
     }
 
@@ -121,14 +121,14 @@ if WhichNode = better {
 	    warpto(BurnMoment-BurnTime/2-WarpStopTime).
 
 	    wait until vang(ship:facing:forevector,steering) <  5 and time:seconds > BurnMoment-BurnTime/2.
-	    	set throttle to 1.
+	    	lock throttle to 1.
 		    print "Burn started              " at (0,0).
 
 		wait until abs(TInc-Inc)<=IncAccuracy*10.
-	    	set throttle to 0.1.
+	    	lock throttle to 0.1.
 
 	    wait until abs(TInc-Inc)<=IncAccuracy.
-	    	set throttle to 0.
+	    	lock throttle to 0.
 		    print "Burn completed" at (0,0).
     }
 	set running to false.
@@ -144,14 +144,14 @@ if running = true and WhichNode = closer {
 	    warpto(BurnMoment-BurnTime/2-WarpStopTime).
 
 	    wait until vang(ship:facing:forevector,steering) <  5 and time:seconds > BurnMoment-BurnTime/2.
-	    	set throttle to 1.
+	    	lock throttle to 1.
 		    print "Burn started             " at (0,0).
 
 		wait until abs(TInc-Inc)<=IncAccuracy*10.
-	    	set throttle to 0.1.
+	    	lock throttle to 0.1.
 
 	    wait until abs(TInc-Inc)<=IncAccuracy.
-	    	set throttle to 0.
+	    	lock throttle to 0.
 		    print "Burn completed" at (0,0).
     }
 
@@ -163,14 +163,14 @@ if running = true and WhichNode = closer {
 	    warpto(BurnMoment-BurnTime/2-WarpStopTime).
 
 	    wait until vang(ship:facing:forevector,steering) <  5 and time:seconds > BurnMoment-BurnTime/2.
-	    	set throttle to 1.
+	    	lock throttle to 1.
 		    print "Burn started              " at (0,0).
 
 		wait until abs(TInc-Inc)<=IncAccuracy*10.
-	    	set throttle to 0.1.
+	    	lock throttle to 0.1.
 
 	    wait until abs(TInc-Inc)<=IncAccuracy.
-	    	set throttle to 0.
+	    	lock throttle to 0.
 		    print "Burn completed" at (0,0).
     }
 }

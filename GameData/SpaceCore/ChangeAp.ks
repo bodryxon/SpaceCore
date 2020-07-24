@@ -50,11 +50,11 @@ if TargetAp < apoapsis and running = true{
 	warpto(BurnMoment-BurnTime/2-WarpStopTime).
 
 	wait until vang(ship:facing:forevector,steering:forevector) <  5 and time:seconds > BurnMoment-BurnTime/2.
-		set throttle to 1.
+		lock throttle to 1.
 		print "Burn started        " at (0,0).
 
 	wait until ship:velocity:orbit:mag < TPeV.
-		set throttle to 0.
+		lock throttle to 0.
 		print "Burn completed" at (0,0).
 
 	set running to false.
@@ -77,11 +77,11 @@ if TargetAp > apoapsis and running = true{
 	warpto(BurnMoment-BurnTime/2-WarpStopTime).
 
 	wait until vang(ship:facing:forevector,steering:forevector) <  5 and time:seconds > BurnMoment-BurnTime/2.
-		set throttle to 1.
+		lock throttle to 1.
 		print "Burn started        " at (0,0).
 
 	wait until ship:velocity:orbit:mag > TPeV.
-		set throttle to 0.
+		lock throttle to 0.
 		print "Burn completed" at (0,0).
 
 	set running to false.

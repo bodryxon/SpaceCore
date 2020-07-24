@@ -41,11 +41,11 @@ set BurnMoment to time:seconds + eta:apoapsis.
 warpto(BurnMoment-BurnTime/2-WarpStopTime).
 
 wait until vang(ship:facing:forevector,steering:forevector) <  5 and time:seconds > BurnMoment-BurnTime/2.
-	set throttle to 1.
+	lock throttle to 1.
 	print "Circularization burn started" at (0,0).
 
 wait until TargetV < ship:velocity:orbit:mag.
-	set throttle to 0.
+	lock throttle to 0.
 	unlock steering.
 	rcs off.
 	print "Circularization burn completed" at (0,0).

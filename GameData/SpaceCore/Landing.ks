@@ -16,13 +16,13 @@ when running = true then {
 sas off.
 rcs on.
 brakes on.
-set throttle to 0.
+lock throttle to 0.
 lock steering to srfretrograde.
 
 
 //landing burn start
 wait until (ship:velocity:surface:mag^2/(2*alt:radar-PreTouchdownAltitude)+body:mu/(body:radius+altitude)^2)*mass > availablethrust*ThrottleLevel.
-	set throttle to ThrottleLevel.
+	lock throttle to ThrottleLevel.
 	print "Landing burn initiated" at (0,0).
 
 lock throttle to (ship:velocity:surface:mag^2/(2*(alt:radar-PreTouchdownAltitude))+body:mu/(body:radius+altitude)^2)*mass/availablethrust.
@@ -42,7 +42,7 @@ wait until ship:velocity:surface:mag < LandingVelocity.
 
 //landing
 wait until status = "LANDED" or status = "SPLASHED" or verticalspeed > 0.
-	set throttle to 0.
+	lock throttle to 0.
 	print "Landing completed       " at (0,0).
 	wait 5.
 	unlock steering.

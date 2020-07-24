@@ -21,7 +21,7 @@ when running = true then {
 
 
 sas off.
-set throttle to 1.
+lock throttle to 1.
 
 if maxthrust = 0 {
 	stage.
@@ -43,7 +43,7 @@ when maxthrust<InitialStageThrust then {
 
 
 //pitch
-set steering to heading((90-RelativeInclination),90,TargetRoll).
+lock steering to heading((90-RelativeInclination),90,TargetRoll).
 print "Ascent Program" at (0,0).
 
 wait until ship:velocity:surface:mag > PitchStartVelocity.
@@ -58,7 +58,7 @@ lock steering to heading(90-RelativeInclination,0,TargetRoll).
 //cutoff
 wait until ship:apoapsis > TargetAltitude.
 	print "Engine cutoff                                  " at(0,1).
-	set throttle to 0.
+	lock throttle to 0.
 	lock steering to prograde.
 
 	set warpmode to "physics".

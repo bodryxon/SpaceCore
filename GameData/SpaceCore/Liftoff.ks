@@ -5,7 +5,7 @@ clearscreen.
 print "Running: uLiftoff" at (0,2).
 
 if maxthrust=0 {stage.}
-set throttle to 1.
+lock throttle to 1.
 print "Ignition          " at (0,0).
 
 wait TimeAfterIgnition.

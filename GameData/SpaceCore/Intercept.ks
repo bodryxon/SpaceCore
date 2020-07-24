@@ -26,7 +26,7 @@ clearscreen.
 
 rcs on.
 sas off.
-set throttle to 0.
+lock throttle to 0.
 
 if orbit:eccentricity > 0.05 {
     runpath("0:/SpaceCore/CircToPe").
@@ -81,14 +81,14 @@ set BurnMoment to time:seconds + TimeToRPA.
 warpto(BurnMoment-BurnTime/2-WarpStopTime).
 
 wait until vang(ship:facing:forevector,steering:forevector) <  5 and time:seconds > BurnMoment-BurnTime/2.
-	set throttle to 1.
+	lock throttle to 1.
     print "Burn started                  " at (0,0).
 
 wait until ship:patches:tostring:contains("ORBIT of "+target:name).
-    set throttle to 0.1.
+    lock throttle to 0.1.
 
 wait until orbit:nextpatch:periapsis < TPeriapsis or orbit:nextpatch:inclination > 90.
-   	set throttle to 0.
+   	lock throttle to 0.
     print "Burn completed" at (0,0).
 
     rcs off.
