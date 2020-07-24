@@ -1,2 +1,0 @@
-run uCountdown.
-run uLiftoff.
