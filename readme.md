@@ -40,24 +40,29 @@ To use the scripts, you have to run them in kOS console like you would run any o
 
 ### Example: Eject
 
-    
+
+The simplest of all the scripts are those named for what they do. 
+ 
+``` 
     run Eject.
-    
+```
 
-    Eject is the name of the script
-
-Some scripts in the pack can be launched with specific parameters (orbit inclination, altitude etc.). It is done by entering the command run [script name]([parameter 1],[parameter 2]…).
+(Batteries not inclued, paramaters not required.)
 
 ---
 
 ### Example: SHohmann
 
 
+Some scripts in the pack can be launched with specific parameters (orbit inclination, altitude etc.). It is done by entering the command run [script name]([parameter 1],[parameter 2]…).
+
+```
     run SHohmann(100,120)
 
 
         100 is periapsis altitude
         120 is apoapsis altitude in kilometers
+```
 
 If you don't enter the parameters when running a script, default parameters will be used (they can be changed in script files).
 
