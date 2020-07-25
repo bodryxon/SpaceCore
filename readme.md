@@ -40,9 +40,9 @@ To use the scripts, you have to run them in kOS console like you would run any o
 
 ### Example: Eject
 
-    ```kOS
+    
     run Eject.
-    ```
+    
 
     Eject is the name of the script
 
@@ -52,9 +52,9 @@ Some scripts in the pack can be launched with specific parameters (orbit inclina
 
 ### Example: SHohmann
 
-    ```kOS
+
     run SHohmann(100,120)
-    ```
+
 
         100 is periapsis altitude
         120 is apoapsis altitude in kilometers
