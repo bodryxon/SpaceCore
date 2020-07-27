@@ -18,7 +18,7 @@ If you've got any questions or ideas for new features, feel free to address them
 
 ## Installation
 
-### [kOS] (required to run scripts)
+### kOS (required to run scripts)
 --[KSP Forum](https://forum.kerbalspaceprogram.com/index.php?/topic/165628-181-kos-v1210-kos-scriptable-autopilot-system/&tab=comments#comment-3175111/)
 --[SpaceDock](https://spacedock.info/mod/60/kOS:%20Scriptable%20Autopilot%20System)
 --[GitHub](https://github.com/KSP-KOS/KOS/releases)
